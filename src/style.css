@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  left:0; 
+  left: 0;
   right: 0;
   top: 0;
   bottom: 0;
@@ -85,13 +85,13 @@ body {
 .modal {
   position: absolute;
   top: 0;
-  left: 0; 
+  left: 0;
   right: 0;
   background-color: blueviolet;
   color: white;
   padding: 25px;
   font-size: 20px;
-  font-weight: bold; 
+  font-weight: bold;
   border-radius: 12px;
 }
 
@@ -105,7 +105,7 @@ body {
 
 .fox {
   position: absolute;
-  top:336px;
+  top: 336px;
   left: 285px;
   overflow: hidden;
 }
@@ -116,12 +116,12 @@ body {
 }
 
 .fox-celebrate {
-  top: 290px; 
+  top: 290px;
   left: 290px;
 }
 
 .fox-rain {
-  top: 3cqmin;
+  top: 362px;
 }
 
 .fox-hungry {
@@ -133,7 +133,7 @@ body {
 }
 
 .fox-egg {
-  top:289px;
+  top: 289px;
   left: 248px;
 }
 
@@ -146,6 +146,3 @@ body {
   top: 380px;
   left: 243px;
 }
-
-
-
