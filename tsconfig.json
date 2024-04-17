@@ -6,7 +6,8 @@
     "noImplicitReturns": true,
     "alwaysStrict": true,
     "isolatedModules": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "noImplicitThis": true
   },
   "include": ["./src/**/*"]
 }

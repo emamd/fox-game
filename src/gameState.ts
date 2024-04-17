@@ -19,6 +19,7 @@ const gameState = {
   poopTime: -1,
   timeToStartCelebrating: -1,
   timeToEndCelebrating: -1,
+  scene: -1,
   tick() {
     this.clock++;
     console.log("clock", this.clock);
@@ -137,7 +138,7 @@ const gameState = {
     modFox("pooping");
   },
   sleep() {
-    this.state = "SLEEP";
+    this.current = "SLEEP";
     modFox("sleep");
     modScene("night");
     // make sure fox doesn't get hungry or poop in the night!
