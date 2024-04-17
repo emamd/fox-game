@@ -5,10 +5,6 @@ const toggleHighlighted = (icon: number, show: boolean) =>
     .querySelector(`.${ICONS[icon]}-icon`)
     .classList.toggle("highlighted", show);
 
-interface onClickInterface {
-  target: HTMLElement;
-}
-
 export default function initButtons(handleUserAction: Function) {
   let selectedIcon = 0;
 
