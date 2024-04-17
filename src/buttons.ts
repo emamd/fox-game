@@ -1,14 +1,19 @@
 import { ICONS } from "./constants";
 
-const toggleHighlighted = (icon, show) =>
+const toggleHighlighted = (icon: number, show: boolean) =>
   document
     .querySelector(`.${ICONS[icon]}-icon`)
     .classList.toggle("highlighted", show);
 
-export default function initButtons(handleUserAction) {
+interface onClickInterface {
+  target: HTMLElement;
+}
+
+export default function initButtons(handleUserAction: Function) {
   let selectedIcon = 0;
 
-  function buttonClick({ target }) {
+  function buttonClick(event: MouseEvent) {
+    const target = event.target as HTMLDivElement;
     if (target.classList.contains("left-btn")) {
       toggleHighlighted(selectedIcon, false);
       selectedIcon = (2 + selectedIcon) % ICONS.length;
