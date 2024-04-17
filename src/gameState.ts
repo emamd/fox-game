@@ -41,7 +41,7 @@ const gameState = {
 
     return this.clock;
   },
-  handleUserAction(icon) {
+  handleUserAction(icon: string) {
     if (
       ["SLEEP", "FEEDING", "CELEBRATING", "HATCHING"].includes(this.current)
     ) {
